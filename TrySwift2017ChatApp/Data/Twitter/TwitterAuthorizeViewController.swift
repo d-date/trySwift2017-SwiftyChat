@@ -19,26 +19,26 @@ class TwitterAuthorizeViewController: UIViewController {
         
     }
 
-    @IBAction func login(_ sender: Any) {
-        let loginController = FHSTwitterEngine.shared().loginController { (success) -> Void in
-            guard let results = FHSTwitterEngine.shared().getDirectMessages(50) else {
-                return
-            }
-            let jsons = JSON(results).arrayValue
-            var recipientList: [TwitterMessageEntity] = []
-            var senderList: [TwitterMessageEntity] = []
-            for json in jsons {
-                let recipient = TwitterTranslator().translate(from: json["recipient"], isOwned: true)
-                let sender = TwitterTranslator().translate(from: json["sender"], isOwned: false)
-                recipientList.append(recipient)
-                senderList.append(sender)
-            }
-            
-            self.ownList.list.append(contentsOf: recipientList)
-            self.senderList.list.append(contentsOf: senderList)
-            } as UIViewController
-        self .present(loginController, animated: true, completion: nil)
-    }
+//    @IBAction func login(_ sender: Any) {
+//        let loginController = FHSTwitterEngine.shared().loginController { (success) -> Void in
+//            guard let results = FHSTwitterEngine.shared().getDirectMessages(50) else {
+//                return
+//            }
+//            let jsons = JSON(results).arrayValue
+//            var recipientList: [TwitterMessageEntity] = []
+//            var senderList: [TwitterMessageEntity] = []
+//            for json in jsons {
+//                let recipient = TwitterTranslator().translate(from: json["recipient"], isOwned: true)
+//                let sender = TwitterTranslator().translate(from: json["sender"], isOwned: false)
+//                recipientList.append(recipient)
+//                senderList.append(sender)
+//            }
+//            
+//            self.ownList.list.append(contentsOf: recipientList)
+//            self.senderList.list.append(contentsOf: senderList)
+//            } as UIViewController
+//        self .present(loginController, animated: true, completion: nil)
+//    }
     
 }
 

@@ -9,14 +9,10 @@
 import UIKit
 import SwiftyJSON
 
-
 class FeedListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var tapCellAction: (() -> ())!
-    
-    var ownList = TwitterMessageListEntity(list: [])
-    var senderList = TwitterMessageListEntity(list: [])
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,22 +20,35 @@ class FeedListViewController: UIViewController {
         tableView.register(UINib(nibName: "FeedListTableViewCell", bundle: nil), forCellReuseIdentifier: "FeedListTableViewCell")
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        fetchTwitterList()
+    }
+    
+    var ownList = TwitterMessageListEntity(list: [])
+    var senderList = TwitterMessageListEntity(list: [])
+    
     func fetchTwitterList() {
-        guard let results = FHSTwitterEngine.shared().getDirectMessages(50) else {
+        guard let results = FHSTwitterEngine.shared().getDirectMessages(20) else {
+            tableView.reloadData()
             return
         }
         let jsons = JSON(results).arrayValue
         var recipientList: [TwitterMessageEntity] = []
         var senderList: [TwitterMessageEntity] = []
         for json in jsons {
-            let recipient = TwitterTranslator().translate(from: json["recipient"], isOwned: true)
-            let sender = TwitterTranslator().translate(from: json["sender"], isOwned: false)
+            let text = json["text"].stringValue
+            let recipient = TwitterTranslator().translate(from: json["recipient"], isOwned: true, text: text)
+            let sender = TwitterTranslator().translate(from: json["sender"], isOwned: false, text: text)
             recipientList.append(recipient)
             senderList.append(sender)
         }
         
-        self.ownList.list.append(contentsOf: recipientList)
-        self.senderList.list.append(contentsOf: senderList)
+        self.ownList = TwitterMessageListEntity(list: recipientList)
+        self.senderList = TwitterMessageListEntity(list: senderList)
+        
+        tableView.reloadData()
     }
 }
 
@@ -63,12 +72,17 @@ extension FeedListViewController: UITableViewDelegate {
 
 extension FeedListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return senderList.list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeedListTableViewCell") as! FeedListTableViewCell
-//        cell.setup(with: .twitter, iconUrl: , lastMessage: <#T##String#>)
+        let element = senderList.list[indexPath.row]
+        if 
+            let imageUrl = element.user.iconUrl,
+            let message  = element.message {
+            cell.setup(with: .twitter, iconUrl: imageUrl, lastMessage: message)
+        }
         return cell
     }
 }
