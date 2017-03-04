@@ -19,7 +19,7 @@ class FeedListTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         feedImageView.backgroundColor = UIColor.red
-        serviceImageView.backgroundColor = UIColor.red
+        serviceImageView.backgroundColor = UIColor.blue
     }
     
     func setup(with serviceType: ServiceType, iconUrl: String, lastMessage: String) {

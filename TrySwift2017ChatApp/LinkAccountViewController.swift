@@ -73,13 +73,20 @@ extension LinkAccountViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let _ = UserDefaults.standard.object(forKey: UDKey.UserId) as? String {
-            performSegue(withIdentifier: "ToUsers", sender: nil)
+        if indexPath.row == 1 {
+            didSelectTwitter()
         } else {
-            performSegue(withIdentifier: "ToName", sender: nil)
+            if let _ = UserDefaults.standard.object(forKey: UDKey.UserId) as? String {
+                performSegue(withIdentifier: "ToUsers", sender: nil)
+            } else {
+                performSegue(withIdentifier: "ToName", sender: nil)
+            }
         }
         
+        
         tableView.deselectRow(at: indexPath, animated: false)
+        
+        
     }
 }
 
