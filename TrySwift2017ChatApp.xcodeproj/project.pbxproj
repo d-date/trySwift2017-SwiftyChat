@@ -115,6 +115,7 @@
 		29ADA6D11E6A5B8200216D22 /* TrySwift2017ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				29BA96561E6AB3720069B6E3 /* Firebase */,
 				BAA9DE441E6AA37D00AD474B /* Data */,
 				29ADA6D21E6A5B8200216D22 /* AppDelegate.swift */,
 				29ADA6D41E6A5B8200216D22 /* FeedViewController.swift */,
@@ -135,6 +136,13 @@
 				BAA9DE751E6AA98B00AD474B /* ServiceType.swift */,
 			);
 			path = TrySwift2017ChatApp;
+			sourceTree = "<group>";
+		};
+		29BA96561E6AB3720069B6E3 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Firebase;
 			sourceTree = "<group>";
 		};
 		85AF03EBCE7A292CA8DB805B /* Frameworks */ = {
