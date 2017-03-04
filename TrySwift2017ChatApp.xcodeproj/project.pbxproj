@@ -22,6 +22,7 @@
 		29ADA6ED1E6A688600216D22 /* FeedListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ADA6EC1E6A688600216D22 /* FeedListTableViewCell.swift */; };
 		29ADA6EF1E6A689700216D22 /* LinkAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ADA6EE1E6A689700216D22 /* LinkAccountTableViewCell.swift */; };
 		29ADA6F11E6A6A0200216D22 /* LinkAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ADA6F01E6A6A0200216D22 /* LinkAccountViewController.swift */; };
+		29BA96551E6AAF0E0069B6E3 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA96541E6AAF0E0069B6E3 /* Secret.swift */; };
 		606F5F1AD5E94805E744BFE7 /* Pods_TrySwift2017ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C9D569A3DF00B3CE1CA5100 /* Pods_TrySwift2017ChatApp.framework */; };
 		BAA9DE641E6AA37D00AD474B /* MessageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA9DE4C1E6AA37D00AD474B /* MessageEntity.swift */; };
 		BAA9DE651E6AA37D00AD474B /* MessageListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA9DE4D1E6AA37D00AD474B /* MessageListEntity.swift */; };
@@ -29,7 +30,6 @@
 		BAA9DE671E6AA37D00AD474B /* MessageTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA9DE4F1E6AA37D00AD474B /* MessageTranslator.swift */; };
 		BAA9DE681E6AA37D00AD474B /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA9DE501E6AA37D00AD474B /* MessageType.swift */; };
 		BAA9DE691E6AA37D00AD474B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA9DE511E6AA37D00AD474B /* Request.swift */; };
-		BAA9DE6A1E6AA37D00AD474B /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA9DE521E6AA37D00AD474B /* Secret.swift */; };
 		BAA9DE6B1E6AA37D00AD474B /* FHSStream.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9DE561E6AA37D00AD474B /* FHSStream.m */; };
 		BAA9DE6C1E6AA37E00AD474B /* FHSTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA9DE581E6AA37D00AD474B /* FHSTwitterEngine.m */; };
 		BAA9DE6D1E6AA37E00AD474B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA9DE591E6AA37D00AD474B /* Message.swift */; };
@@ -59,6 +59,7 @@
 		29ADA6EC1E6A688600216D22 /* FeedListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedListTableViewCell.swift; sourceTree = "<group>"; };
 		29ADA6EE1E6A689700216D22 /* LinkAccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkAccountTableViewCell.swift; sourceTree = "<group>"; };
 		29ADA6F01E6A6A0200216D22 /* LinkAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkAccountViewController.swift; sourceTree = "<group>"; };
+		29BA96541E6AAF0E0069B6E3 /* Secret.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Secret.swift; path = ../../../../../../../../Downloads/Secret.swift; sourceTree = "<group>"; };
 		6C9D569A3DF00B3CE1CA5100 /* Pods_TrySwift2017ChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrySwift2017ChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B2731A76C455561C01D589E /* Pods-TrySwift2017ChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrySwift2017ChatApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrySwift2017ChatApp/Pods-TrySwift2017ChatApp.release.xcconfig"; sourceTree = "<group>"; };
 		BAA9DE4C1E6AA37D00AD474B /* MessageEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageEntity.swift; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		BAA9DE4F1E6AA37D00AD474B /* MessageTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTranslator.swift; sourceTree = "<group>"; };
 		BAA9DE501E6AA37D00AD474B /* MessageType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageType.swift; sourceTree = "<group>"; };
 		BAA9DE511E6AA37D00AD474B /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		BAA9DE521E6AA37D00AD474B /* Secret.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
 		BAA9DE531E6AA37D00AD474B /* trySwift2017-SwiftyChat-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "trySwift2017-SwiftyChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		BAA9DE551E6AA37D00AD474B /* FHSStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHSStream.h; sourceTree = "<group>"; };
 		BAA9DE561E6AA37D00AD474B /* FHSStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHSStream.m; sourceTree = "<group>"; };
@@ -163,7 +163,6 @@
 				BAA9DE4F1E6AA37D00AD474B /* MessageTranslator.swift */,
 				BAA9DE501E6AA37D00AD474B /* MessageType.swift */,
 				BAA9DE511E6AA37D00AD474B /* Request.swift */,
-				BAA9DE521E6AA37D00AD474B /* Secret.swift */,
 				BAA9DE531E6AA37D00AD474B /* trySwift2017-SwiftyChat-Bridging-Header.h */,
 				BAA9DE541E6AA37D00AD474B /* Twitter */,
 				BAA9DE5D1E6AA37D00AD474B /* UserEntity.swift */,
@@ -175,6 +174,7 @@
 		BAA9DE541E6AA37D00AD474B /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
+				29BA96541E6AAF0E0069B6E3 /* Secret.swift */,
 				BAA9DE551E6AA37D00AD474B /* FHSStream.h */,
 				BAA9DE561E6AA37D00AD474B /* FHSStream.m */,
 				BAA9DE571E6AA37D00AD474B /* FHSTwitterEngine.h */,
@@ -328,11 +328,11 @@
 				BAA9DE681E6AA37D00AD474B /* MessageType.swift in Sources */,
 				BAA9DE701E6AA37E00AD474B /* UserEntity.swift in Sources */,
 				29ADA6ED1E6A688600216D22 /* FeedListTableViewCell.swift in Sources */,
+				29BA96551E6AAF0E0069B6E3 /* Secret.swift in Sources */,
 				BAA9DE6E1E6AA37E00AD474B /* TwitterAuthorizeViewController.swift in Sources */,
 				29ADA6F11E6A6A0200216D22 /* LinkAccountViewController.swift in Sources */,
 				BAA9DE641E6AA37D00AD474B /* MessageEntity.swift in Sources */,
 				29ADA6D31E6A5B8200216D22 /* AppDelegate.swift in Sources */,
-				BAA9DE6A1E6AA37D00AD474B /* Secret.swift in Sources */,
 				29ADA6EF1E6A689700216D22 /* LinkAccountTableViewCell.swift in Sources */,
 				BAA9DE6B1E6AA37D00AD474B /* FHSStream.m in Sources */,
 				29A759DE1E6A874600FE423A /* RoomViewController.swift in Sources */,
