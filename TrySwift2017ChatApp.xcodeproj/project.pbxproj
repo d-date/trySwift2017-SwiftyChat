@@ -23,6 +23,18 @@
 		29ADA6EF1E6A689700216D22 /* LinkAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ADA6EE1E6A689700216D22 /* LinkAccountTableViewCell.swift */; };
 		29ADA6F11E6A6A0200216D22 /* LinkAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ADA6F01E6A6A0200216D22 /* LinkAccountViewController.swift */; };
 		29BA96551E6AAF0E0069B6E3 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA96541E6AAF0E0069B6E3 /* Secret.swift */; };
+		29BA967D1E6AB64A0069B6E3 /* UsersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA96711E6AB64A0069B6E3 /* UsersController.swift */; };
+		29BA967E1E6AB64A0069B6E3 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA96721E6AB64A0069B6E3 /* UsersModel.swift */; };
+		29BA967F1E6AB64A0069B6E3 /* UsersDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA96731E6AB64A0069B6E3 /* UsersDTO.swift */; };
+		29BA96801E6AB64A0069B6E3 /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA96741E6AB64A0069B6E3 /* SQLiteManager.swift */; };
+		29BA96811E6AB64A0069B6E3 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA96751E6AB64A0069B6E3 /* AppUtility.swift */; };
+		29BA96821E6AB64A0069B6E3 /* Users.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29BA96761E6AB64A0069B6E3 /* Users.storyboard */; };
+		29BA96831E6AB64A0069B6E3 /* UsersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA96771E6AB64A0069B6E3 /* UsersCell.swift */; };
+		29BA96841E6AB64A0069B6E3 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA96781E6AB64A0069B6E3 /* ChatController.swift */; };
+		29BA96851E6AB64A0069B6E3 /* Name.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29BA96791E6AB64A0069B6E3 /* Name.storyboard */; };
+		29BA96861E6AB64A0069B6E3 /* NameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA967A1E6AB64A0069B6E3 /* NameController.swift */; };
+		29BA96871E6AB64A0069B6E3 /* AppCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA967B1E6AB64A0069B6E3 /* AppCommon.swift */; };
+		29BA96881E6AB64A0069B6E3 /* MyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA967C1E6AB64A0069B6E3 /* MyMessage.swift */; };
 		606F5F1AD5E94805E744BFE7 /* Pods_TrySwift2017ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C9D569A3DF00B3CE1CA5100 /* Pods_TrySwift2017ChatApp.framework */; };
 		BAA9DE641E6AA37D00AD474B /* MessageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA9DE4C1E6AA37D00AD474B /* MessageEntity.swift */; };
 		BAA9DE651E6AA37D00AD474B /* MessageListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA9DE4D1E6AA37D00AD474B /* MessageListEntity.swift */; };
@@ -60,6 +72,18 @@
 		29ADA6EE1E6A689700216D22 /* LinkAccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkAccountTableViewCell.swift; sourceTree = "<group>"; };
 		29ADA6F01E6A6A0200216D22 /* LinkAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkAccountViewController.swift; sourceTree = "<group>"; };
 		29BA96541E6AAF0E0069B6E3 /* Secret.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Secret.swift; path = ../../../../../../../../Downloads/Secret.swift; sourceTree = "<group>"; };
+		29BA96711E6AB64A0069B6E3 /* UsersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersController.swift; path = Firebase/UsersController.swift; sourceTree = "<group>"; };
+		29BA96721E6AB64A0069B6E3 /* UsersModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersModel.swift; path = Firebase/UsersModel.swift; sourceTree = "<group>"; };
+		29BA96731E6AB64A0069B6E3 /* UsersDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersDTO.swift; path = Firebase/UsersDTO.swift; sourceTree = "<group>"; };
+		29BA96741E6AB64A0069B6E3 /* SQLiteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SQLiteManager.swift; path = Firebase/SQLiteManager.swift; sourceTree = "<group>"; };
+		29BA96751E6AB64A0069B6E3 /* AppUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppUtility.swift; path = Firebase/AppUtility.swift; sourceTree = "<group>"; };
+		29BA96761E6AB64A0069B6E3 /* Users.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Users.storyboard; path = Firebase/Users.storyboard; sourceTree = "<group>"; };
+		29BA96771E6AB64A0069B6E3 /* UsersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersCell.swift; path = Firebase/UsersCell.swift; sourceTree = "<group>"; };
+		29BA96781E6AB64A0069B6E3 /* ChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatController.swift; path = Firebase/ChatController.swift; sourceTree = "<group>"; };
+		29BA96791E6AB64A0069B6E3 /* Name.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Name.storyboard; path = Firebase/Name.storyboard; sourceTree = "<group>"; };
+		29BA967A1E6AB64A0069B6E3 /* NameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NameController.swift; path = Firebase/NameController.swift; sourceTree = "<group>"; };
+		29BA967B1E6AB64A0069B6E3 /* AppCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCommon.swift; path = Firebase/AppCommon.swift; sourceTree = "<group>"; };
+		29BA967C1E6AB64A0069B6E3 /* MyMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyMessage.swift; path = Firebase/MyMessage.swift; sourceTree = "<group>"; };
 		6C9D569A3DF00B3CE1CA5100 /* Pods_TrySwift2017ChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrySwift2017ChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B2731A76C455561C01D589E /* Pods-TrySwift2017ChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrySwift2017ChatApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrySwift2017ChatApp/Pods-TrySwift2017ChatApp.release.xcconfig"; sourceTree = "<group>"; };
 		BAA9DE4C1E6AA37D00AD474B /* MessageEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageEntity.swift; sourceTree = "<group>"; };
@@ -141,6 +165,18 @@
 		29BA96561E6AB3720069B6E3 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				29BA96711E6AB64A0069B6E3 /* UsersController.swift */,
+				29BA96721E6AB64A0069B6E3 /* UsersModel.swift */,
+				29BA96731E6AB64A0069B6E3 /* UsersDTO.swift */,
+				29BA96741E6AB64A0069B6E3 /* SQLiteManager.swift */,
+				29BA96751E6AB64A0069B6E3 /* AppUtility.swift */,
+				29BA96761E6AB64A0069B6E3 /* Users.storyboard */,
+				29BA96771E6AB64A0069B6E3 /* UsersCell.swift */,
+				29BA96781E6AB64A0069B6E3 /* ChatController.swift */,
+				29BA96791E6AB64A0069B6E3 /* Name.storyboard */,
+				29BA967A1E6AB64A0069B6E3 /* NameController.swift */,
+				29BA967B1E6AB64A0069B6E3 /* AppCommon.swift */,
+				29BA967C1E6AB64A0069B6E3 /* MyMessage.swift */,
 			);
 			name = Firebase;
 			sourceTree = "<group>";
@@ -258,6 +294,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				29ADA6DD1E6A5B8200216D22 /* LaunchScreen.storyboard in Resources */,
+				29BA96851E6AB64A0069B6E3 /* Name.storyboard in Resources */,
+				29BA96821E6AB64A0069B6E3 /* Users.storyboard in Resources */,
 				29A759DA1E6A6D4100FE423A /* FeedList.storyboard in Resources */,
 				29ADA6DA1E6A5B8200216D22 /* Assets.xcassets in Resources */,
 				29ADA6E71E6A604C00216D22 /* LinkAccount.storyboard in Resources */,
@@ -322,26 +360,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29BA96811E6AB64A0069B6E3 /* AppUtility.swift in Sources */,
 				BAA9DE761E6AA98B00AD474B /* ServiceType.swift in Sources */,
+				29BA96861E6AB64A0069B6E3 /* NameController.swift in Sources */,
 				BAA9DE651E6AA37D00AD474B /* MessageListEntity.swift in Sources */,
 				29A759D81E6A6CE500FE423A /* FeedListViewController.swift in Sources */,
 				29A759DC1E6A6DB400FE423A /* UIView+Extension.swift in Sources */,
 				29ADA6D51E6A5B8200216D22 /* FeedViewController.swift in Sources */,
 				BAA9DE671E6AA37D00AD474B /* MessageTranslator.swift in Sources */,
+				29BA96831E6AB64A0069B6E3 /* UsersCell.swift in Sources */,
 				BAA9DE661E6AA37D00AD474B /* MessageListTranslator.swift in Sources */,
 				BAA9DE711E6AA37E00AD474B /* ViewController.swift in Sources */,
 				BAA9DE6D1E6AA37E00AD474B /* Message.swift in Sources */,
 				BAA9DE6C1E6AA37E00AD474B /* FHSTwitterEngine.m in Sources */,
 				BAA9DE691E6AA37D00AD474B /* Request.swift in Sources */,
 				BAA9DE681E6AA37D00AD474B /* MessageType.swift in Sources */,
+				29BA967F1E6AB64A0069B6E3 /* UsersDTO.swift in Sources */,
 				BAA9DE701E6AA37E00AD474B /* UserEntity.swift in Sources */,
+				29BA967E1E6AB64A0069B6E3 /* UsersModel.swift in Sources */,
+				29BA96801E6AB64A0069B6E3 /* SQLiteManager.swift in Sources */,
 				29ADA6ED1E6A688600216D22 /* FeedListTableViewCell.swift in Sources */,
+				29BA96871E6AB64A0069B6E3 /* AppCommon.swift in Sources */,
+				29BA967D1E6AB64A0069B6E3 /* UsersController.swift in Sources */,
 				29BA96551E6AAF0E0069B6E3 /* Secret.swift in Sources */,
 				BAA9DE6E1E6AA37E00AD474B /* TwitterAuthorizeViewController.swift in Sources */,
 				29ADA6F11E6A6A0200216D22 /* LinkAccountViewController.swift in Sources */,
+				29BA96841E6AB64A0069B6E3 /* ChatController.swift in Sources */,
 				BAA9DE641E6AA37D00AD474B /* MessageEntity.swift in Sources */,
 				29ADA6D31E6A5B8200216D22 /* AppDelegate.swift in Sources */,
 				29ADA6EF1E6A689700216D22 /* LinkAccountTableViewCell.swift in Sources */,
+				29BA96881E6AB64A0069B6E3 /* MyMessage.swift in Sources */,
 				BAA9DE6B1E6AA37D00AD474B /* FHSStream.m in Sources */,
 				29A759DE1E6A874600FE423A /* RoomViewController.swift in Sources */,
 				BAA9DE6F1E6AA37E00AD474B /* User.swift in Sources */,
