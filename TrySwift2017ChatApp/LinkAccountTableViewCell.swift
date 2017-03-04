@@ -20,12 +20,12 @@ class LinkAccountTableViewCell: UITableViewCell {
             serviceImageView.image = #imageLiteral(resourceName: "slack-icon")
             serviceLabel.text = "Slack"
         }  else if index == 1 {
-            backgroundImageView.image = #imageLiteral(resourceName: "slack-background")
+            backgroundImageView.image = #imageLiteral(resourceName: "twitter-background")
             serviceImageView.image = #imageLiteral(resourceName: "twitter-icon")
             serviceLabel.text = "Twitter"
         } else {
-            backgroundImageView.image = #imageLiteral(resourceName: "slack-background")
-            serviceImageView.image = #imageLiteral(resourceName: "twitter-icon")
+            backgroundImageView.image = #imageLiteral(resourceName: "bk_firebase")
+            serviceImageView.image = #imageLiteral(resourceName: "google_firebase")
             serviceLabel.text = "Firebase"
         }
         
