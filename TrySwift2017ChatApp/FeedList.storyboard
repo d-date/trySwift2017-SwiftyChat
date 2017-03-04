@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="h4n-LC-YnV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Feed List View Controller-->
+        <scene sceneID="Dsw-IF-exP">
+            <objects>
+                <viewController storyboardIdentifier="FeedListViewController" id="h4n-LC-YnV" customClass="FeedListViewController" customModule="TrySwift2017ChatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Axl-7a-ZL8"/>
+                        <viewControllerLayoutGuide type="bottom" id="qRj-CE-lOQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3hM-PN-wZr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QQ9-In-Jok">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="h4n-LC-YnV" id="QLj-p4-aJr"/>
+                                    <outlet property="delegate" destination="h4n-LC-YnV" id="8hz-qR-084"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qRj-CE-lOQ" firstAttribute="top" secondItem="QQ9-In-Jok" secondAttribute="bottom" id="0tP-0T-j7r"/>
+                            <constraint firstItem="QQ9-In-Jok" firstAttribute="leading" secondItem="3hM-PN-wZr" secondAttribute="leading" id="6cN-5Y-Beh"/>
+                            <constraint firstAttribute="trailing" secondItem="QQ9-In-Jok" secondAttribute="trailing" id="TtZ-rM-n8E"/>
+                            <constraint firstItem="QQ9-In-Jok" firstAttribute="top" secondItem="Axl-7a-ZL8" secondAttribute="bottom" id="p3q-PO-2Vd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="QQ9-In-Jok" id="hB6-2N-lEM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p9h-cf-hRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-830" y="-351"/>
+        </scene>
+    </scenes>
+</document>

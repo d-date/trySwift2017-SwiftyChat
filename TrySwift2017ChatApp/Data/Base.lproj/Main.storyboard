@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="00u-HK-Ij7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="trySwift2017_SwiftyChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCU-1u-wo3">
+                                <rect key="frame" x="163" y="184" width="48" height="30"/>
+                                <state key="normal" title="Twitter"/>
+                                <connections>
+                                    <segue destination="5cu-yb-3Li" kind="show" id="75z-tG-SOp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lCU-1u-wo3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="QWJ-az-fLr"/>
+                            <constraint firstItem="lCU-1u-wo3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xAD-Sd-951"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Byz-Mu-bhE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575.20000000000005" y="138.98050974512745"/>
+        </scene>
+        <!--Twitter Authorize View Controller-->
+        <scene sceneID="IwK-22-997">
+            <objects>
+                <viewController id="5cu-yb-3Li" customClass="TwitterAuthorizeViewController" customModule="trySwift2017_SwiftyChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hyk-H1-Is5"/>
+                        <viewControllerLayoutGuide type="bottom" id="VDS-VK-mby"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QFc-Tz-WGN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zp0-3I-JFU">
+                                <rect key="frame" x="164" y="318.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="login:" destination="5cu-yb-3Li" eventType="touchUpInside" id="LnU-4E-Zv0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zp0-3I-JFU" firstAttribute="centerX" secondItem="QFc-Tz-WGN" secondAttribute="centerX" id="1uQ-Aw-Yjb"/>
+                            <constraint firstItem="zp0-3I-JFU" firstAttribute="centerY" secondItem="QFc-Tz-WGN" secondAttribute="centerY" id="okE-eP-r52"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PTG-cf-4aV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="228.93553223388307"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ncy-mP-PbW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="00u-HK-Ij7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N6V-WN-Lb5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PZz-1a-CS1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xkj-ht-f7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-364" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

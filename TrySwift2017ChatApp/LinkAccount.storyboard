@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mGf-yi-5qj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="cKi-NJ-dOn">
+            <objects>
+                <navigationController id="mGf-yi-5qj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gmO-EA-GkK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CH5-RQ-EkQ" kind="relationship" relationship="rootViewController" id="CrZ-bc-MnY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eFE-cO-EQo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-569" y="171"/>
+        </scene>
+        <!--Link Account View Controller-->
+        <scene sceneID="L9K-bP-4ld">
+            <objects>
+                <viewController id="CH5-RQ-EkQ" customClass="LinkAccountViewController" customModule="TrySwift2017ChatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8O2-m3-cTX"/>
+                        <viewControllerLayoutGuide type="bottom" id="sPc-fo-hWR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nfm-2s-pxi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MP8-dK-WUf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="CH5-RQ-EkQ" id="aj7-UF-uQ7"/>
+                                    <outlet property="delegate" destination="CH5-RQ-EkQ" id="RKD-lO-kps"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sPc-fo-hWR" firstAttribute="top" secondItem="MP8-dK-WUf" secondAttribute="bottom" id="IVR-h8-mQe"/>
+                            <constraint firstItem="MP8-dK-WUf" firstAttribute="top" secondItem="Nfm-2s-pxi" secondAttribute="top" id="ODC-li-me0"/>
+                            <constraint firstItem="MP8-dK-WUf" firstAttribute="leading" secondItem="Nfm-2s-pxi" secondAttribute="leading" id="cuE-Nn-YGD"/>
+                            <constraint firstAttribute="trailing" secondItem="MP8-dK-WUf" secondAttribute="trailing" id="zVa-Tj-q4P"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bPa-8X-HqQ"/>
+                    <connections>
+                        <outlet property="tableView" destination="MP8-dK-WUf" id="ssG-8h-PMA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pMQ-GU-nHk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="328.80000000000001" y="169.56521739130437"/>
+        </scene>
+    </scenes>
+</document>
