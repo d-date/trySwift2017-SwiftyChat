@@ -65,6 +65,16 @@ class LinkAccountViewController: UIViewController {
             } as UIViewController
         self .present(loginController, animated: true, completion: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "ToName") {
+            guard let next = segue.destination as? NameController else {
+                return
+            }
+            
+            next.modalPresentationStyle = .custom
+        }
+    }
 }
 
 extension LinkAccountViewController: UITableViewDelegate {
@@ -73,9 +83,13 @@ extension LinkAccountViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: false)
+        if let _ = UserDefaults.standard.object(forKey: UDKey.UserId) as? String {
+            performSegue(withIdentifier: "ToUsers", sender: nil)
+        } else {
+            performSegue(withIdentifier: "ToName", sender: nil)
+        }
         
-        didSelectTwitter()
+        tableView.deselectRow(at: indexPath, animated: false)
     }
 }
 

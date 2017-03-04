@@ -35,6 +35,7 @@
 		29BA96861E6AB64A0069B6E3 /* NameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA967A1E6AB64A0069B6E3 /* NameController.swift */; };
 		29BA96871E6AB64A0069B6E3 /* AppCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA967B1E6AB64A0069B6E3 /* AppCommon.swift */; };
 		29BA96881E6AB64A0069B6E3 /* MyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA967C1E6AB64A0069B6E3 /* MyMessage.swift */; };
+		29BA968A1E6AB71F0069B6E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29BA96891E6AB71F0069B6E3 /* GoogleService-Info.plist */; };
 		606F5F1AD5E94805E744BFE7 /* Pods_TrySwift2017ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C9D569A3DF00B3CE1CA5100 /* Pods_TrySwift2017ChatApp.framework */; };
 		BAA9DE641E6AA37D00AD474B /* MessageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA9DE4C1E6AA37D00AD474B /* MessageEntity.swift */; };
 		BAA9DE651E6AA37D00AD474B /* MessageListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA9DE4D1E6AA37D00AD474B /* MessageListEntity.swift */; };
@@ -84,6 +85,7 @@
 		29BA967A1E6AB64A0069B6E3 /* NameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NameController.swift; path = Firebase/NameController.swift; sourceTree = "<group>"; };
 		29BA967B1E6AB64A0069B6E3 /* AppCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCommon.swift; path = Firebase/AppCommon.swift; sourceTree = "<group>"; };
 		29BA967C1E6AB64A0069B6E3 /* MyMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyMessage.swift; path = Firebase/MyMessage.swift; sourceTree = "<group>"; };
+		29BA96891E6AB71F0069B6E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6C9D569A3DF00B3CE1CA5100 /* Pods_TrySwift2017ChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrySwift2017ChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B2731A76C455561C01D589E /* Pods-TrySwift2017ChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrySwift2017ChatApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrySwift2017ChatApp/Pods-TrySwift2017ChatApp.release.xcconfig"; sourceTree = "<group>"; };
 		BAA9DE4C1E6AA37D00AD474B /* MessageEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageEntity.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				29ADA6E81E6A617E00216D22 /* LinkAccountTableViewCell.xib */,
 				29A759DB1E6A6DB400FE423A /* UIView+Extension.swift */,
 				29ADA6D91E6A5B8200216D22 /* Assets.xcassets */,
+				29BA96891E6AB71F0069B6E3 /* GoogleService-Info.plist */,
 				29ADA6DB1E6A5B8200216D22 /* LaunchScreen.storyboard */,
 				29ADA6DE1E6A5B8200216D22 /* Info.plist */,
 				BAA9DE751E6AA98B00AD474B /* ServiceType.swift */,
@@ -300,6 +303,7 @@
 				29ADA6DA1E6A5B8200216D22 /* Assets.xcassets in Resources */,
 				29ADA6E71E6A604C00216D22 /* LinkAccount.storyboard in Resources */,
 				29ADA6E51E6A5E9500216D22 /* Feed.storyboard in Resources */,
+				29BA968A1E6AB71F0069B6E3 /* GoogleService-Info.plist in Resources */,
 				29ADA6EB1E6A61AE00216D22 /* FeedListTableViewCell.xib in Resources */,
 				29ADA6E91E6A617E00216D22 /* LinkAccountTableViewCell.xib in Resources */,
 			);

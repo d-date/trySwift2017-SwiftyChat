@@ -57,11 +57,29 @@
                     <navigationItem key="navigationItem" id="bPa-8X-HqQ"/>
                     <connections>
                         <outlet property="tableView" destination="MP8-dK-WUf" id="ssG-8h-PMA"/>
+                        <segue destination="8Jz-Q2-O88" kind="show" identifier="ToUsers" id="Lil-tx-swp"/>
+                        <segue destination="HQJ-Xh-UkK" kind="show" identifier="ToName" id="bsE-LE-TRy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMQ-GU-nHk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="328.80000000000001" y="169.56521739130437"/>
+        </scene>
+        <!--Users-->
+        <scene sceneID="eWt-sV-Gcj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Users" id="8Jz-Q2-O88" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2zy-2J-Uij" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1091" y="141"/>
+        </scene>
+        <!--Name-->
+        <scene sceneID="NA3-A0-FlZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Name" id="HQJ-Xh-UkK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NBa-YM-STl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1167" y="319"/>
         </scene>
     </scenes>
 </document>

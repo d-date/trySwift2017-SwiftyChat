@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -33,7 +34,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
         
+        setupFirebase()
+        
+        SQLiteManager.sharedInstance.createDB()
+        
         return true
+    }
+    
+    private func setupFirebase() {
+        FIRApp.configure()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

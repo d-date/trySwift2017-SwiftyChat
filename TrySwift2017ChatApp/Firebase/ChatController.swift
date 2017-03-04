@@ -194,6 +194,18 @@ class ChatController: JSQMessagesViewController {
         finishReceivingMessage(animated: true)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        tabBarController?.tabBar.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        tabBarController?.tabBar.isHidden = false
+    }
+    
     override func didPressAccessoryButton(_ sender: UIButton) {
         self.inputToolbar.contentView!.textView!.resignFirstResponder()
         
