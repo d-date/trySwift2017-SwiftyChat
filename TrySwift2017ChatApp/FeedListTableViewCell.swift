@@ -23,7 +23,6 @@ class FeedListTableViewCell: UITableViewCell {
     }
     
     func setup(with serviceType: ServiceType, iconUrl: String, lastMessage: String) {
-        feedImageView.image = nil
         if let url = URL(string: iconUrl) {
             feedImageView.kf.setImage(with: url)
         }

@@ -8,6 +8,9 @@
 
 import JSQMessagesViewController
 import UIKit
+import Kingfisher
+import SwiftyJSON
+import Alamofire
 
 class RoomViewController: JSQMessagesViewController {
     var messages: [JSQMessage] = []
@@ -17,7 +20,21 @@ class RoomViewController: JSQMessagesViewController {
     var incomingAvatar: JSQMessagesAvatarImage!
     let userIcon = JSQMessagesBubbleImage(messageBubble: #imageLiteral(resourceName: "UserIcon"), highlightedImage: #imageLiteral(resourceName: "UserIcon"))
     
+    var senderIcon: UIImage?
     override func viewDidLoad() {
+        Alamofire.request("https://pbs.twimg.com/profile_images/830074140644106240/3OWdm9mb_normal.jpg").responseData { response in
+            guard let image = UIImage(data: response.data!) else {
+                return
+            }
+            
+            if let image = response.result.value {
+                print("image downloaded: \(image)")
+            }
+            
+            self.collectionView?.reloadData()
+            self.senderIcon = image
+            self.setupInitialSettings()
+        }
         super.viewDidLoad()
         
         title = "Room Name"
@@ -38,6 +55,37 @@ class RoomViewController: JSQMessagesViewController {
         tabBarController?.tabBar.isHidden = true
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        fetchTwitterList()
+    }
+    
+    var ownList = TwitterMessageListEntity(list: [])
+    var senderList = TwitterMessageListEntity(list: [])
+    
+    func fetchTwitterList() {
+        guard let results = FHSTwitterEngine.shared().getDirectMessages(20) else {
+            collectionView.reloadData()
+            return
+        }
+        let jsons = JSON(results).arrayValue
+        var recipientList: [TwitterMessageEntity] = []
+        var senderList: [TwitterMessageEntity] = []
+        for json in jsons {
+            let text = json["text"].stringValue
+            let recipient = TwitterTranslator().translate(from: json["recipient"], isOwned: true, text: text)
+            let sender = TwitterTranslator().translate(from: json["sender"], isOwned: false, text: text)
+            recipientList.append(recipient)
+            senderList.append(sender)
+        }
+        
+        self.ownList = TwitterMessageListEntity(list: recipientList)
+        self.senderList = TwitterMessageListEntity(list: senderList)
+        
+        collectionView.reloadData()
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
@@ -55,7 +103,9 @@ class RoomViewController: JSQMessagesViewController {
             .outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleGreen())
         
         // 相手の画像設定
-        self.incomingAvatar = JSQMessagesAvatarImageFactory.avatarImage(with: #imageLiteral(resourceName: "UserIcon"), diameter: 64)
+        if let sendreIcon = senderIcon {
+            self.incomingAvatar = JSQMessagesAvatarImageFactory.avatarImage(with: sendreIcon, diameter: 64)
+        }
     }
     
     // For DEMO only

@@ -14,18 +14,18 @@ protocol EntityTranslator {
     func translate(from json: JSON, isOwned: Bool) -> Output
 }
 
-struct TwitterTranslator: EntityTranslator {
-    func translate(from json: JSON, isOwned: Bool) -> TwitterMessageEntity {
+struct TwitterTranslator {
+    func translate(from json: JSON, isOwned: Bool, text: String) -> TwitterMessageEntity {
         return TwitterMessageEntity (
             isOwnMessage: isOwned,
             messageType: .unknown,
-            message: json["text"].rawString(),
+            message: text,
             imageUrls: [],
             user: TwitterUserEntity(
                 id: json["id"].rawString(),
                 name: json["screen_name"].rawString(),
                 subName: json["name"].rawString(),
-                iconUrl: json["profile_image_url"].rawString()
+                iconUrl: json["profile_image_url_https"].rawString()
             )
         )
     }

@@ -51,6 +51,9 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What did you eat last dinner?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVL-nL-fQ0">
                                 <rect key="frame" x="0.0" y="40" width="422.5" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="kcd-8q-NSZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -63,6 +66,7 @@
                             <constraint firstAttribute="trailing" secondItem="aVL-nL-fQ0" secondAttribute="trailing" id="8UQ-dv-Ie3"/>
                             <constraint firstItem="MXN-oY-ZOy" firstAttribute="top" secondItem="6aq-AQ-b4z" secondAttribute="top" id="Jvn-zI-yrV"/>
                             <constraint firstItem="UwJ-24-G5T" firstAttribute="leading" secondItem="MXN-oY-ZOy" secondAttribute="trailing" constant="8" id="Mef-Dr-Fyw"/>
+                            <constraint firstAttribute="height" constant="65" id="QSD-Ka-E2f"/>
                             <constraint firstItem="aVL-nL-fQ0" firstAttribute="leading" secondItem="6aq-AQ-b4z" secondAttribute="leading" id="Ych-G5-Wgh"/>
                             <constraint firstItem="UwJ-24-G5T" firstAttribute="centerY" secondItem="MXN-oY-ZOy" secondAttribute="centerY" id="cJX-7S-c0H"/>
                             <constraint firstItem="aVL-nL-fQ0" firstAttribute="top" secondItem="MXN-oY-ZOy" secondAttribute="bottom" constant="8" id="hud-sg-IcH"/>
@@ -89,7 +93,7 @@
                 <outlet property="lastMessageLabel" destination="aVL-nL-fQ0" id="6Kp-8w-YgY"/>
                 <outlet property="serviceImageView" destination="MXN-oY-ZOy" id="xTt-ju-E0a"/>
             </connections>
-            <point key="canvasLocation" x="170.5" y="127.5"/>
+            <point key="canvasLocation" x="-96" y="74"/>
         </tableViewCell>
     </objects>
     <resources>

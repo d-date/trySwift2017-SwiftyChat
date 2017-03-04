@@ -16,16 +16,16 @@ protocol ListTranslator {
 }
 
 
-struct TwitterListTranslator: ListTranslator {
-    func asArray(from json: JSON) -> [JSON] {
-        return json[""].arrayValue
-    }
-    func translate(from json: JSON, isOwned: Bool) -> TwitterMessageListEntity {
-        return TwitterMessageListEntity (
-            list: asArray(from: json).map { TwitterTranslator().translate(from: $0, isOwned: isOwned) }
-        )
-    }
-}
+//struct TwitterListTranslator: ListTranslator {
+//    func asArray(from json: JSON) -> [JSON] {
+//        return json[""].arrayValue
+//    }
+//    func translate(from json: JSON, isOwned: Bool) -> TwitterMessageListEntity {
+//        return TwitterMessageListEntity (
+//            list: asArray(from: json).map { TwitterTranslator().translate(from: $0, isOwned: isOwned) }
+//        )
+//    }
+//}
 
 struct SlackListTranslator: ListTranslator {
     func asArray(from json: JSON) -> [JSON] {

@@ -50,16 +50,6 @@ class LinkAccountViewController: UIViewController {
                 return
             }
             self.presentAlert(false)
-            let jsons = JSON(results).arrayValue
-            var recipientList: [TwitterMessageEntity] = []
-            var senderList: [TwitterMessageEntity] = []
-            for json in jsons {
-                let recipient = TwitterTranslator().translate(from: json["recipient"], isOwned: true)
-                let sender = TwitterTranslator().translate(from: json["sender"], isOwned: false)
-                recipientList.append(recipient)
-                senderList.append(sender)
-            }
-            
 //            self.ownList.list.append(contentsOf: recipientList)
 //            self.senderList.list.append(contentsOf: senderList)
             } as UIViewController
